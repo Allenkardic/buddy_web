@@ -1,0 +1,17 @@
+export default {
+  primary: "#FF8600",
+  red: "#EB3348",
+  redVariantOne: "rgba(235, 51, 72, 0.08)",
+  black: "#1D1D18",
+  blue: "#0761d5",
+  white: "#FFFFFF",
+  grey: "#5B6871",
+  greyVariantOne: "#84919A",
+  greyVariantTwo: "#5B6871",
+  yellow: "#fbad39",
+  green: "#00A441",
+  greenVariantOne: "#E0FAF5",
+  orangeVariantOne: "rgba(255, 134, 0, 0.16)",
+  purple: "#7B91F7",
+  purpleVariantOne: "#EFF2FE",
+};
