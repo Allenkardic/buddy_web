@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Input, TextWithIcon } from "../../components";
 import { H1, H2, H3, H4, H5, H6, Container } from "../../styles";
 import { ContentOne, ContentTwo, DashboardContainer } from "./style";
-import { PotentialMembers, TrendingPosts } from "../../atoms";
+import { PotentialMembers, TrendingPosts, Summary } from "../../atoms";
 
 function Dashboard() {
   const [potentialMembers, setPotentialMembers] = useState([
@@ -31,6 +31,21 @@ function Dashboard() {
       comments: 234,
     },
   ]);
+
+  const [summary, setSummary] = useState([
+    {
+      count: 51,
+      helper: "Total Channels",
+    },
+    {
+      count: 125,
+      helper: "New Members",
+    },
+    {
+      count: 789,
+      helper: "All Impressions",
+    },
+  ]);
   return (
     <Container>
       {/* <H1>H1</H1>
@@ -51,6 +66,7 @@ function Dashboard() {
       <TextWithIcon text="Tract real-time overview of company's financial performance" /> */}
       <DashboardContainer>
         <ContentOne>
+          <Summary data={summary} />
           <TrendingPosts data={trendingPosts} />
           <PotentialMembers data={potentialMembers} />
         </ContentOne>

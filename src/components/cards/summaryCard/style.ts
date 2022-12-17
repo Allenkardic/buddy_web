@@ -2,22 +2,48 @@ import styled from "styled-components";
 import { colors, spacing, borderRadius } from "../../../utils";
 
 interface StyleProps {
-  error?: string;
+  helperText?: string;
 }
 
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  padding-left: ${spacing.xsmall};
-  padding-right: ${spacing.xxsmall};
-  width: 100%;
-  border: 1px solid
-    ${(p: StyleProps) => (p.error ? colors.red : colors.primary)};
-  border-radius: ${borderRadius.small};
-  &:focus-within {
-    outline: none;
-    box-shadow: 0 0 0 1px ${colors.primary};
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  width: 30%;
+  border: 1px solid ${colors.smokeWhite};
+  border-radius: ${borderRadius.medium};
+  padding: ${spacing.small} ${spacing.xsmall};
+  background-color: ${colors.white};
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-bottom: ${spacing.xsmall};
   }
+`;
+
+export const ContentOne = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const HelperText = styled.div`
+  margin-top: ${spacing.xxsmall};
+`;
+
+export const ContentTwo = styled.div`
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: ${(p: StyleProps) =>
+    p.helperText === "Total Channels"
+      ? colors.greenVariantOne
+      : p.helperText === "New Members"
+      ? colors.purpleVariantOne
+      : colors.orangeVariantOne};
 `;
