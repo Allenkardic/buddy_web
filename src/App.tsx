@@ -1,6 +1,7 @@
 import React from "react";
 
 import {
+  BrowserRouter,
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
@@ -10,29 +11,15 @@ import "./App.css";
 import { Dashboard } from "./pages/dashboard";
 import ErrorPage from "./pages/errorPage";
 import Global from "./styles/global";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "dashboard",
-        element: <Dashboard />,
-      },
-    ],
-  },
-
-]);
-
+import AppRoute from "./routes";
 
 function App() {
   return (
-    <div className='App'>
-      <Global />
-      <RouterProvider router={router} />
-    </div>
+    <>
+      <BrowserRouter>
+        <AppRoute />
+      </BrowserRouter>
+    </>
   );
 }
 
