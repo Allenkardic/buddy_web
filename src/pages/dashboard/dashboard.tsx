@@ -5,7 +5,7 @@ import { FiTrendingUp } from "react-icons/fi";
 import { Input, TextWithIcon } from "../../components";
 import { H1, H2, H3, H4, H5, H6, Container } from "../../styles";
 import { ContentOne, ContentTwo, DashboardContainer } from "./style";
-import { PotentialMembers, TrendingPosts, Summary } from "../../atoms";
+import { PotentialMembers, TrendingPosts, Summary, Revenue } from "../../atoms";
 import { colors } from "../../utils";
 
 function Dashboard() {
@@ -56,6 +56,27 @@ function Dashboard() {
       iconBackgroundColor: colors.orangeVariantOne,
     },
   ]);
+
+  const [revenue, setRevenue] = useState([
+    {
+      amount: 4000,
+      helper: "Total Channels",
+      icon: <GiSpring color={colors.green} size={"25px"} />,
+      iconBackgroundColor: colors.greenVariantOne,
+    },
+    {
+      amount: 2120,
+      helper: "New Members",
+      icon: <AiOutlineUser color={colors.purple} size={"25px"} />,
+      iconBackgroundColor: colors.purpleVariantOne,
+    },
+    {
+      amount: 1752,
+      helper: "All Impressions",
+      icon: <AiOutlineUser color={colors.primary} size={"25px"} />,
+      iconBackgroundColor: colors.orangeVariantOne,
+    },
+  ]);
   return (
     <Container>
       {/* <H1>H1</H1>
@@ -82,6 +103,7 @@ function Dashboard() {
         </ContentOne>
         <ContentTwo>
           <div>jhfhfhhfh</div>
+          <Revenue data={revenue} />
         </ContentTwo>
       </DashboardContainer>
     </Container>

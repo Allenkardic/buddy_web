@@ -4,6 +4,7 @@ import { colors, spacing, borderRadius } from "../../../utils";
 interface StyleProps {
   helperText?: string;
   iconBackgroundColor?: string;
+  amount?: number;
 }
 
 export const Container = styled.div`
@@ -12,10 +13,19 @@ export const Container = styled.div`
   align-items: center;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  width: 30%;
+  width: 100%;
   border: 1px solid ${colors.smokeWhite};
   border-radius: ${borderRadius.medium};
-  padding: ${spacing.small} ${spacing.xsmall};
+  // padding: ${spacing.small} ${spacing.xsmall};
+
+  padding-top: ${(p: StyleProps) =>
+    p.amount ? spacing.xsmall : spacing.small};
+  padding-bottom: ${(p: StyleProps) =>
+    p.amount ? spacing.xsmall : spacing.small};
+  padding-left: ${(p: StyleProps) =>
+    p.amount ? spacing.xsmall : spacing.xsmall};
+  padding-right: ${(p: StyleProps) =>
+    p.amount ? spacing.xsmall : spacing.xsmall};
   background-color: ${colors.white};
   @media (max-width: 768px) {
     width: 100%;

@@ -1,7 +1,4 @@
 import React, { ReactElement } from "react";
-import { GiSpring } from "react-icons/gi";
-import { AiOutlineUser } from "react-icons/ai";
-import { FiTrendingUp } from "react-icons/fi";
 import { Container, ContentOne, ContentTwo, HelperText } from "./style";
 import { colors } from "../../../utils";
 import { H2, H3, H6 } from "../../../styles";
@@ -22,7 +19,7 @@ function SummaryCard({
   iconBackgroundColor,
 }: IProps) {
   return (
-    <Container>
+    <Container amount={amount}>
       <ContentOne>
         {amount ? (
           <H3 bold left>
@@ -39,16 +36,7 @@ function SummaryCard({
           </H6>
         </HelperText>
       </ContentOne>
-      <ContentTwo iconBackgroundColor={iconBackgroundColor}>
-        {/* {helperText === "Total Channels" ? (
-          <GiSpring size={"25px"} color={colors.green} />
-        ) : helperText === "New Members" ? (
-          <AiOutlineUser size={"25px"} color={colors.purple} />
-        ) : (
-          <FiTrendingUp size={"25px"} color={colors.primary} />
-        )} */}
-        {icon}
-      </ContentTwo>
+      <ContentTwo iconBackgroundColor={iconBackgroundColor}>{icon}</ContentTwo>
     </Container>
   );
 }

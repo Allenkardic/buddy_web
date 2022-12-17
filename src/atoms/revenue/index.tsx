@@ -1,18 +1,23 @@
 import React, { useState } from "react";
 import { H2 } from "../../styles";
 import { IProps } from "../../components/cards/potentialMembersCard";
-import { Container, Content, Card, Title } from "./style";
+import { Container, Content, Title, Card } from "./style";
 import { SummaryCard } from "../../components";
 
-function Summary({ data }: any) {
+function Revenue({ data }: any) {
   return (
     <Container>
+      <Title>
+        <H2 bold left>
+          Revenue
+        </H2>
+      </Title>
       <Content>
         {data.map((item: any, index: string) => (
           <Card>
             <SummaryCard
               key={index}
-              count={item.count}
+              amount={item.amount}
               helperText={item.helper}
               icon={item.icon}
               iconBackgroundColor={item.iconBackgroundColor}
@@ -24,4 +29,4 @@ function Summary({ data }: any) {
   );
 }
 
-export default Summary;
+export default Revenue;
