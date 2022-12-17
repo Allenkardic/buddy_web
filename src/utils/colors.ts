@@ -8,6 +8,7 @@ export default {
   grey: "#5B6871",
   greyVariantOne: "#84919A",
   greyVariantTwo: "#5B6871",
+  greyVariantThree: "#F6F6F6",
   yellow: "#fbad39",
   green: "#00A441",
   greenVariantOne: "#E0FAF5",
@@ -15,4 +16,5 @@ export default {
   purple: "#7B91F7",
   purpleVariantOne: "#EFF2FE",
   smokeWhite: "#f6f6f6",
+  gold: "#FFB800",
 };

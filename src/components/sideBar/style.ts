@@ -17,6 +17,7 @@ export const Container = styled.div`
   padding-top: ${spacing.medium};
   display: flex;
   flex-direction: column;
+  border: 1px solid green;
 `;
 
 export const Content = styled.div`

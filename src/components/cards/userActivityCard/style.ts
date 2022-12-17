@@ -20,7 +20,7 @@ export const Container = styled.div`
 `;
 
 export const InfluncerText = styled.div`
-  padding: ${spacing.xxsmall} 0px;
+  padding: ${spacing.xsmall} 0px;
 `;
 
 export const Image = styled.img`
