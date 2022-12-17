@@ -13,6 +13,8 @@ function Summary({ data }: any) {
             key={index}
             count={item.count}
             helperText={item.helper}
+            icon={item.icon}
+            iconBackgroundColor={item.iconBackgroundColor}
           />
         ))}
       </Content>

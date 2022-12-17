@@ -1,8 +1,12 @@
 import React, { useState } from "react";
+import { GiSpring } from "react-icons/gi";
+import { AiOutlineUser } from "react-icons/ai";
+import { FiTrendingUp } from "react-icons/fi";
 import { Input, TextWithIcon } from "../../components";
 import { H1, H2, H3, H4, H5, H6, Container } from "../../styles";
 import { ContentOne, ContentTwo, DashboardContainer } from "./style";
 import { PotentialMembers, TrendingPosts, Summary } from "../../atoms";
+import { colors } from "../../utils";
 
 function Dashboard() {
   const [potentialMembers, setPotentialMembers] = useState([
@@ -36,14 +40,20 @@ function Dashboard() {
     {
       count: 51,
       helper: "Total Channels",
+      icon: <GiSpring color={colors.green} size={"25px"} />,
+      iconBackgroundColor: colors.greenVariantOne,
     },
     {
       count: 125,
       helper: "New Members",
+      icon: <AiOutlineUser color={colors.purple} size={"25px"} />,
+      iconBackgroundColor: colors.purpleVariantOne,
     },
     {
       count: 789,
       helper: "All Impressions",
+      icon: <AiOutlineUser color={colors.primary} size={"25px"} />,
+      iconBackgroundColor: colors.orangeVariantOne,
     },
   ]);
   return (

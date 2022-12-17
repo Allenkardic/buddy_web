@@ -3,6 +3,7 @@ import { colors, spacing, borderRadius } from "../../../utils";
 
 interface StyleProps {
   helperText?: string;
+  iconBackgroundColor?: string;
 }
 
 export const Container = styled.div`
@@ -40,10 +41,7 @@ export const ContentTwo = styled.div`
   width: 48px;
   height: 48px;
   border-radius: 50%;
+
   background-color: ${(p: StyleProps) =>
-    p.helperText === "Total Channels"
-      ? colors.greenVariantOne
-      : p.helperText === "New Members"
-      ? colors.purpleVariantOne
-      : colors.orangeVariantOne};
+    p.iconBackgroundColor ? p.iconBackgroundColor : colors.orangeVariantOne};
 `;
