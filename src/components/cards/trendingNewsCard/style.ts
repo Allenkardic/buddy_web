@@ -1,23 +1,29 @@
 import styled from "styled-components";
 import { colors, spacing, borderRadius } from "../../../utils";
 
-interface StyleProps {
-  error?: string;
-}
-
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  padding-left: ${spacing.xsmall};
-  padding-right: ${spacing.xxsmall};
   width: 100%;
-  border: 1px solid
-    ${(p: StyleProps) => (p.error ? colors.red : colors.primary)};
-  border-radius: ${borderRadius.small};
-  &:focus-within {
-    outline: none;
-    box-shadow: 0 0 0 1px ${colors.primary};
-  }
+  border: 1px solid ${colors.smokeWhite};
+  border-radius: ${borderRadius.medium};
+  padding: ${spacing.xsmall} ${spacing.xsmall};
+`;
+
+export const Img = styled.img`
+  width: 48px;
+  height: 48px;
+  border-radius: ${borderRadius.medium};
+  background-color: ${colors.grey};
+  margin-right: ${spacing.xsmall};
+`;
+
+export const ContentTwo = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const HelperText = styled.div`
+  margin-top: ${spacing.xxsmall};
 `;

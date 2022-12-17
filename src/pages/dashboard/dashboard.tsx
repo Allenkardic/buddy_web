@@ -5,7 +5,13 @@ import { FiTrendingUp } from "react-icons/fi";
 import { Input, TextWithIcon } from "../../components";
 import { H1, H2, H3, H4, H5, H6, Container } from "../../styles";
 import { ContentOne, ContentTwo, DashboardContainer } from "./style";
-import { PotentialMembers, TrendingPosts, Summary, Revenue } from "../../atoms";
+import {
+  PotentialMembers,
+  TrendingPosts,
+  Summary,
+  Revenue,
+  TrendingNews,
+} from "../../atoms";
 import { colors } from "../../utils";
 
 function Dashboard() {
@@ -77,6 +83,21 @@ function Dashboard() {
       iconBackgroundColor: colors.orangeVariantOne,
     },
   ]);
+
+  const [trendingNews, setTrendingNews] = useState([
+    {
+      mainText: "Russsia & Ukraine war",
+      helperText: "Marketing is evolving . It's changing",
+    },
+    {
+      mainText: "Elon Musk bought Twitter",
+      helperText: "Marketing is evolving . It's changing",
+    },
+    {
+      mainText: "Fuel Crisi Everywhere",
+      helperText: "Marketing is evolving . It's changing",
+    },
+  ]);
   return (
     <Container>
       {/* <H1>H1</H1>
@@ -102,8 +123,8 @@ function Dashboard() {
           <PotentialMembers data={potentialMembers} />
         </ContentOne>
         <ContentTwo>
-          <div>jhfhfhhfh</div>
           <Revenue data={revenue} />
+          <TrendingNews data={trendingNews} />
         </ContentTwo>
       </DashboardContainer>
     </Container>
