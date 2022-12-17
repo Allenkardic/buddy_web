@@ -12,7 +12,6 @@ export const InputContainer = styled.div`
   align-items: center;
   padding-left: ${spacing.xsmall};
   padding-right: ${spacing.xxsmall};
-  width: 100%;
   border: 1px solid
     ${(p: StyleProps) => (p.error ? colors.red : colors.primary)};
   border-radius: ${borderRadius.small};
@@ -20,13 +19,6 @@ export const InputContainer = styled.div`
     outline: none;
     box-shadow: 0 0 0 1px ${colors.primary};
   }
-`;
-
-export const InputCover = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 95%;
 `;
 
 export const InputContent = styled.input`
@@ -37,11 +29,16 @@ export const InputContent = styled.input`
   width: 95%;
   padding-left: ${spacing.xsmall};
   transition: all 0.3s ease;
-
   &:focus {
     outline: none;
     box-shadow: 0 0 0 0px ${colors.primary};
   }
+`;
+export const InputCover = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
 `;
 
 export const InputIconContainer = styled.div`

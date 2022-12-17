@@ -1,11 +1,13 @@
 import styled from "styled-components";
+import { colors } from "../utils";
 
 const Container = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   color: white;
-  background-color: #131a22;
+  background-color: ${colors.smokeWhite};
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+  height: 1000px;
 `;
 
 export default Container;

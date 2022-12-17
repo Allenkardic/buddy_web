@@ -1,13 +1,22 @@
 import styled from "styled-components";
-import { colors } from "../utils";
+import { colors, fontWeight } from "../utils";
 
 interface StyleProps {
   left?: boolean;
   right?: boolean;
   center?: boolean;
+  bold?: boolean;
+  semiBold?: boolean;
+  light?: boolean;
 }
 
 export const H1 = styled.div`
+  font-weight: ${(p: StyleProps) =>
+    p.bold
+      ? fontWeight.bold
+      : p.semiBold
+      ? fontWeight.semiBold
+      : fontWeight.light};
   color: ${({ color }: any) => (color ? color : colors.black)};
   font-size: 4.5em;
   text-align: ${(p: StyleProps) =>
@@ -18,6 +27,12 @@ export const H1 = styled.div`
 `;
 
 export const H2 = styled.div`
+  font-weight: ${(p: StyleProps) =>
+    p.bold
+      ? fontWeight.bold
+      : p.semiBold
+      ? fontWeight.semiBold
+      : fontWeight.light};
   color: ${({ color }: any) => (color ? color : colors.black)};
   font-size: 4em;
   text-align: ${(p: StyleProps) =>
@@ -28,6 +43,12 @@ export const H2 = styled.div`
 `;
 
 export const H3 = styled.div`
+  font-weight: ${(p: StyleProps) =>
+    p.bold
+      ? fontWeight.bold
+      : p.semiBold
+      ? fontWeight.semiBold
+      : fontWeight.light};
   color: ${({ color }: any) => (color ? color : colors.black)};
   font-size: 3.5em;
   text-align: ${(p: StyleProps) =>
@@ -38,6 +59,12 @@ export const H3 = styled.div`
 `;
 
 export const H4 = styled.div`
+  font-weight: ${(p: StyleProps) =>
+    p.bold
+      ? fontWeight.bold
+      : p.semiBold
+      ? fontWeight.semiBold
+      : fontWeight.light};
   color: ${({ color }: any) => (color ? color : colors.black)};
   font-size: 3em;
   text-align: ${(p: StyleProps) =>
@@ -48,6 +75,12 @@ export const H4 = styled.div`
 `;
 
 export const H5 = styled.div`
+  font-weight: ${(p: StyleProps) =>
+    p.bold
+      ? fontWeight.bold
+      : p.semiBold
+      ? fontWeight.semiBold
+      : fontWeight.light};
   color: ${({ color }: any) => (color ? color : colors.black)};
   font-size: 2.5em;
   text-align: ${(p: StyleProps) =>
@@ -58,6 +91,12 @@ export const H5 = styled.div`
 `;
 
 export const H6 = styled.div`
+  font-weight: ${(p: StyleProps) =>
+    p.bold
+      ? fontWeight.bold
+      : p.semiBold
+      ? fontWeight.semiBold
+      : fontWeight.light};
   color: ${({ color }: any) => (color ? color : colors.black)};
   font-size: 2em;
   text-align: ${(p: StyleProps) =>

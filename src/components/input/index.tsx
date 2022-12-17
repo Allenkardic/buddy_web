@@ -57,19 +57,21 @@ function Input({ name, type, onChange, error, label }: IProps) {
               onChange={onChange}
             />
           </InputCover>
-          {isPasswordVisible ? (
-            <FiEye
-              color={colors.grey}
-              size={"25px"}
-              onClick={() => setIsPasswordVisible(false)}
-            />
-          ) : (
-            <FiEyeOff
-              color={colors.grey}
-              size={"25px"}
-              onClick={() => setIsPasswordVisible(true)}
-            />
-          )}
+          <InputIconContainer>
+            {isPasswordVisible ? (
+              <FiEye
+                color={colors.grey}
+                size={"25px"}
+                onClick={() => setIsPasswordVisible(false)}
+              />
+            ) : (
+              <FiEyeOff
+                color={colors.grey}
+                size={"25px"}
+                onClick={() => setIsPasswordVisible(true)}
+              />
+            )}
+          </InputIconContainer>
         </InputContainer>
         <H6 left color={colors.red}>
           {error}

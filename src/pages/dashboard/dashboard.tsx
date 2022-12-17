@@ -1,10 +1,54 @@
 import React from "react";
 import { Input, TextWithIcon } from "../../components";
-import { H1, H2, H3, H4, H5, H6 } from "../../styles";
+import { H1, H2, H3, H4, H5, H6, Container } from "../../styles";
 
 function Dashboard() {
   return (
-    <div>
+    <Container>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
+      <div>Dashboard page</div>
       <div>Dashboard page</div>
       <div>Dashboard page</div>
       <div>Dashboard page</div>
@@ -27,7 +71,7 @@ function Dashboard() {
       <TextWithIcon text="Tract real-time overview of company's financial performance" />
       <TextWithIcon text="Tract real-time overview of company's financial performance" />
       <TextWithIcon text="Tract real-time overview of company's financial performance" />
-    </div>
+    </Container>
   );
 }
 

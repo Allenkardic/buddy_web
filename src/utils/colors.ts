@@ -14,4 +14,5 @@ export default {
   orangeVariantOne: "rgba(255, 134, 0, 0.16)",
   purple: "#7B91F7",
   purpleVariantOne: "#EFF2FE",
+  smokeWhite: "#f6f6f6",
 };
