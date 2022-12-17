@@ -1,18 +1,36 @@
 import React from "react";
-import { Container } from "./style";
+import { FiTrendingUp } from "react-icons/fi";
+import {
+  Container,
+  Image,
+  HelperText,
+  PercentageContent,
+  IconContainer,
+} from "./style";
+import { placeholderImage, colors } from "../../../utils";
+import { H2, H6, H4 } from "../../../styles";
 
-function PotentialMembersCard() {
+export interface IProps {
+  title: string;
+  helper: string;
+  growthPercent: number;
+}
+function PotentialMembersCard({ helper, title, growthPercent }: IProps) {
   return (
     <Container>
-      <div>PotentialMembersCard</div>
-      <div>PotentialMembersCard</div>
-      <div>PotentialMembersCard</div>
-      <div>PotentialMembersCard</div>
-      <div>PotentialMembersCard</div>
-      <div>PotentialMembersCard</div>
-      <div>PotentialMembersCard</div>
-      <div>PotentialMembersCard</div>
-      <div>PotentialMembersCard</div>
+      <Image src={placeholderImage.user} alt='user acount' />
+      <H2 color={colors.grey} semiBold>
+        {title}
+      </H2>
+      <HelperText>
+        <H6>{helper}</H6>
+      </HelperText>
+      <PercentageContent>
+        <IconContainer>
+          <FiTrendingUp color={colors.green} size={"20px"} />
+        </IconContainer>
+        <H4 bold>{growthPercent}%</H4>
+      </PercentageContent>
     </Container>
   );
 }

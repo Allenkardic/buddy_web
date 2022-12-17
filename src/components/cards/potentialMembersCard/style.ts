@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors, spacing, borderRadius } from "../../../utils";
+import { colors, spacing, borderRadius, boxShadow } from "../../../utils";
 
 interface StyleProps {
   error?: string;
@@ -7,17 +7,32 @@ interface StyleProps {
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding-left: ${spacing.xsmall};
-  padding-right: ${spacing.xxsmall};
   width: 100%;
-  border: 1px solid
-    ${(p: StyleProps) => (p.error ? colors.red : colors.primary)};
-  border-radius: ${borderRadius.small};
-  &:focus-within {
-    outline: none;
-    box-shadow: 0 0 0 1px ${colors.primary};
-  }
+  border: 1px solid ${colors.smokeWhite};
+  border-radius: ${borderRadius.medium};
+  padding: ${spacing.xsmall} 0px ${spacing.small} 0px;
+`;
+
+export const Image = styled.img`
+  background-color: ${colors.grey};
+  width: 40px;
+  height: 40px;
+  border-radius: ${borderRadius.large};
+`;
+
+export const HelperText = styled.div`
+  padding-top: ${spacing.xsmall};
+  padding-bottom: ${spacing.small};
+`;
+
+export const PercentageContent = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`;
+
+export const IconContainer = styled.div`
+  margin-right: ${spacing.xxsmall};
 `;
