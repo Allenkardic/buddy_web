@@ -11,6 +11,7 @@ import {
   Summary,
   Revenue,
   TrendingNews,
+  Watchlist,
 } from "../../atoms";
 import { colors } from "../../utils";
 
@@ -98,6 +99,22 @@ function Dashboard() {
       helperText: "Marketing is evolving . It's changing",
     },
   ]);
+
+  const [watchlist, setWatchlist] = useState([
+    {
+      product: "AAPL",
+      amount: 142.9,
+      trend: "up",
+      perecentGrowth: 0.47,
+    },
+    {
+      product: "BPL",
+      amount: 142.9,
+      trend: "down",
+      perecentGrowth: 0.78,
+    },
+  ]);
+
   return (
     <Container>
       {/* <H1>H1</H1>
@@ -123,6 +140,7 @@ function Dashboard() {
           <PotentialMembers data={potentialMembers} />
         </ContentOne>
         <ContentTwo>
+          <Watchlist data={watchlist} />
           <Revenue data={revenue} />
           <TrendingNews data={trendingNews} />
         </ContentTwo>

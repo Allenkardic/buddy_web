@@ -5,4 +5,4 @@ export { default as spacing } from "./spacing";
 export { default as borderRadius } from "./borderRadius";
 export { default as boxShadow } from "./boxShadow";
 export { default as fontWeight } from "./fontWeight";
-export { default as placeholderImage } from "./placeholderImage";
+export { default as images } from "./images";

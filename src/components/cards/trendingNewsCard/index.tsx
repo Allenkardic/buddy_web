@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react";
 import { Container, Img, ContentTwo, HelperText } from "./style";
-import { colors, placeholderImage } from "../../../utils";
+import { colors, images } from "../../../utils";
 import { H2, H3, H5, H6 } from "../../../styles";
 
 interface IProps {
@@ -11,7 +11,7 @@ interface IProps {
 function TrendingNewsCard({ mainText, helperText }: IProps) {
   return (
     <Container>
-      <Img src={placeholderImage.user} alt='user image' />
+      <Img src={images.user} alt='user image' />
       <ContentTwo>
         <H5 bold left>
           {mainText}

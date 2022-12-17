@@ -7,7 +7,7 @@ import {
   PercentageContent,
   IconContainer,
 } from "./style";
-import { placeholderImage, colors } from "../../../utils";
+import { images, colors } from "../../../utils";
 import { H2, H6, H4 } from "../../../styles";
 
 export interface IProps {
@@ -18,7 +18,7 @@ export interface IProps {
 function PotentialMembersCard({ helper, title, growthPercent }: IProps) {
   return (
     <Container>
-      <Image src={placeholderImage.user} alt='user acount' />
+      <Image src={images.user} alt='user acount' />
       <H2 color={colors.grey} semiBold>
         {title}
       </H2>

@@ -10,14 +10,41 @@ export const Container = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-left: ${spacing.xsmall};
-  padding-right: ${spacing.xxsmall};
+  padding: ${spacing.xsmall};
   width: 100%;
-  border: 1px solid
-    ${(p: StyleProps) => (p.error ? colors.red : colors.primary)};
-  border-radius: ${borderRadius.small};
-  &:focus-within {
-    outline: none;
-    box-shadow: 0 0 0 1px ${colors.primary};
-  }
+  background-color: ${colors.greyVariantThree};
+  border-radius: ${borderRadius.medium};
+`;
+
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const ContentType = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90px;
+`;
+
+export const ImgContainer = styled.div`
+  width: 154px;
+  height: 59px;
+`;
+
+export const Img = styled.img`
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  display: block;
+`;
+
+export const HelperText = styled.div`
+  margin-top: ${spacing.xsmall};
+  margin-bottom: ${spacing.xxsmall};
+`;
+
+export const TrendContainer = styled.div`
+  margin-left: ${spacing.small};
 `;
