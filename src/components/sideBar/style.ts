@@ -17,8 +17,6 @@ export const Container = styled.div`
   padding-top: ${spacing.medium};
   display: flex;
   flex-direction: column;
-
-  border: 1px solid red;
 `;
 
 export const Content = styled.div`
@@ -27,5 +25,5 @@ export const Content = styled.div`
   -webkit-justify-content: space-between;
   justify-content: space-between;
   height: 100%;
-  border: 1px solid red;
+  padding-bottom: ${spacing.small};
 `;
