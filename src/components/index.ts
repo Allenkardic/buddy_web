@@ -10,3 +10,4 @@ export { default as SideBarCard } from "./cards/sideBarCard";
 export { default as UserActivityCard } from "./cards/userActivityCard";
 export { default as SideBar } from "./sideBar";
 export { default as TopBar } from "./topBar";
+export { default as Button } from "./button";
