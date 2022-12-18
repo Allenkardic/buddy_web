@@ -5,11 +5,20 @@ import { colors } from "../../utils";
 interface IProps {
   text: string;
   icon?: ReactElement;
+  onClick?: () => void;
+  disable?: boolean;
+  type?: "button" | "submit";
 }
 
-function Button({ text, icon }: IProps) {
+function Button({
+  text,
+  icon,
+  onClick,
+  type = "button",
+  disable = false,
+}: IProps) {
   return (
-    <Container>
+    <Container type={type} onClick={onClick}>
       {icon && <ButtonIcon icon={icon}>{icon}</ButtonIcon>}
       <H4 color={icon ? colors.primary : colors.white} semiBold>
         {text}

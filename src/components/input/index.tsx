@@ -10,6 +10,8 @@ import {
   InputContent,
   InputCover,
   InputIconContainer,
+  FormInputContainer,
+  LabelContainer,
 } from "./style";
 
 interface IProps {
@@ -20,6 +22,7 @@ interface IProps {
   label?: string;
   placeholder?: string;
   backgroundColor?: string;
+  value: string;
 }
 
 function Input({
@@ -30,41 +33,61 @@ function Input({
   label,
   placeholder,
   backgroundColor,
+  value,
 }: IProps) {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
   if (type === "email") {
     return (
-      <div>
-        <H6 left color={colors.grey}>
-          {label}
-        </H6>
-        <InputContainer error={error}>
+      <FormInputContainer>
+        {label && (
+          <LabelContainer>
+            <H6 left color={colors.grey}>
+              {label}
+            </H6>
+          </LabelContainer>
+        )}
+        <InputContainer backgroundColor={backgroundColor} error={error}>
           <InputCover>
             <MdEmail color={colors.greyVariantOne} size={"25px"} />
-            <InputContent name={name} type={type} onChange={onChange} />
+            <InputContent
+              value={value}
+              name={name}
+              type={type}
+              onChange={onChange}
+              placeholder={placeholder}
+            />
           </InputCover>
+
           <InputIconContainer error={error}>
-            <MdOutlineCheck color={colors.green} size={"25px"} />
+            {value.length > 1 && (
+              <MdOutlineCheck color={colors.green} size={"25px"} />
+            )}
           </InputIconContainer>
         </InputContainer>
         <H6 left color={colors.red}>
           {error}
         </H6>
-      </div>
+      </FormInputContainer>
     );
   } else if (type === "password") {
     return (
-      <div>
-        <H6 left color={colors.grey}>
-          {label}
-        </H6>
-        <InputContainer error={error}>
+      <FormInputContainer>
+        {label && (
+          <LabelContainer>
+            <H6 left color={colors.grey}>
+              {label}
+            </H6>
+          </LabelContainer>
+        )}
+        <InputContainer backgroundColor={backgroundColor} error={error}>
           <InputCover>
             <AiFillUnlock color={colors.greyVariantOne} size={"25px"} />
             <InputContent
               name={name}
               type={isPasswordVisible ? "text" : "password"}
               onChange={onChange}
+              value={value}
+              placeholder={placeholder}
             />
           </InputCover>
           <InputIconContainer>
@@ -86,7 +109,7 @@ function Input({
         <H6 left color={colors.red}>
           {error}
         </H6>
-      </div>
+      </FormInputContainer>
     );
   }
   return (
@@ -103,6 +126,7 @@ function Input({
           name={name}
           type={type}
           onChange={onChange}
+          value={value}
         />
       </InputContainer>
       <H6 left color={colors.red}>

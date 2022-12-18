@@ -7,17 +7,18 @@ interface StyleProps {
   icon?: ReactElement;
 }
 
-export const Container = styled.div`
+export const Container = styled.button`
   display: flex;
   flex-direction: row;
   align-items: center;
   -webkit-align-items: center;
   justify-content: center;
   background-color: ${(p: StyleProps) =>
-    p.secondary ? colors.primary : colors.orangeVariantOne};
+    p.secondary ? colors.orangeVariantOne : colors.primary};
   box-shadow: ${boxShadow.light};
   height: 43px;
   width: 100%;
+  border: none;
   border-radius: ${borderRadius.medium};
 `;
 

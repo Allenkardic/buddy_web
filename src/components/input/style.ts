@@ -4,6 +4,8 @@ import { colors, spacing, borderRadius } from "../../utils";
 interface StyleProps {
   error?: string;
   backgroundColor?: string;
+  borderColor?: string;
+  value?: string;
 }
 
 export const InputContainer = styled.div`
@@ -15,11 +17,7 @@ export const InputContainer = styled.div`
   padding-right: ${spacing.xxsmall};
   border: 1px solid
     ${(p: StyleProps) =>
-      p.error
-        ? colors.red
-        : p.backgroundColor
-        ? p.backgroundColor
-        : colors.primary};
+      p.error ? colors.red : p.borderColor ? p.borderColor : colors.primary};
   border-radius: ${borderRadius.small};
   background-color: ${(p: StyleProps) =>
     p.backgroundColor ? p.backgroundColor : "transparent"};
@@ -52,4 +50,12 @@ export const InputCover = styled.div`
 
 export const InputIconContainer = styled.div`
   display: ${(p: StyleProps) => (p.error ? "none" : "block")};
+`;
+
+export const FormInputContainer = styled.div`
+  margin-bottom: ${spacing.small};
+`;
+
+export const LabelContainer = styled.div`
+  margin-bottom: ${spacing.xxsmall};
 `;

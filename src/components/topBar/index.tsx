@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsBell } from "react-icons/bs";
 import { AiOutlinePlus } from "react-icons/ai";
 import { Input } from "../";
@@ -13,6 +13,7 @@ import {
 } from "./style";
 
 function SideBar() {
+  const [searchValue, setSarchValue] = useState("");
   return (
     <Container>
       <ContentOne>
@@ -24,11 +25,12 @@ function SideBar() {
         <SearchContainer>
           <Input
             type='text'
-            name='name'
+            name='searchValue'
             onChange={() => {}}
             error={""}
             placeholder='Search'
             backgroundColor={colors.white}
+            value={searchValue}
           />
         </SearchContainer>
         <NavIconContainer>

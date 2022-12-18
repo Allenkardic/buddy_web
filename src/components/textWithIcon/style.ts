@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors, spacing, borderRadius } from "../../utils";
+import { colors, spacing, borderRadius, boxShadow } from "../../utils";
 
 export const TextWithIconContainer = styled.div`
   display: flex;
@@ -25,4 +25,24 @@ export const IconContainer = styled.div`
 
 export const Content = styled.div`
   align-item: left;
+`;
+
+export const ChatBoxContainer = styled.div`
+  position: absolute;
+  right: 13%;
+  bottom: -10px;
+  background-color: ${colors.primary};
+  display: inline-block;
+  align-self: flex-start;
+  padding: 12px ${spacing.xsmall};
+  border-radius: 60.7143px;
+  margin-bottom: ${spacing.medium};
+  box-shadow: ${boxShadow.heavy};
+`;
+
+export const ChatBoxContent = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 `;

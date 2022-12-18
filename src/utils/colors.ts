@@ -11,6 +11,7 @@ export default {
   greyVariantThree: "#F6F6F6",
   greyVariantFour: "#F1F1F2",
   greyVariantFive: "#E6E6E7",
+  greyVariantSix: "#F8FAFC",
   yellow: "#fbad39",
   green: "#00A441",
   greenVariantOne: "#E0FAF5",

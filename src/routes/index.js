@@ -37,7 +37,7 @@ import { SideBar } from "../components";
 // }
 
 function AppRoute() {
-  const authUser = true;
+  const authUser = false;
   return (
     <div>
       {authUser && <SideBar />}
