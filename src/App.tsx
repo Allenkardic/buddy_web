@@ -9,7 +9,6 @@ import {
 import logo from "./logo.svg";
 import "./App.css";
 import { Dashboard } from "./pages/dashboard";
-import ErrorPage from "./pages/errorPage";
 import Global from "./styles/global";
 import AppRoute from "./routes";
 

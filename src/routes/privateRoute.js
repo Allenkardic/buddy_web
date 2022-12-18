@@ -1,14 +1,14 @@
+import axios from "axios";
 import { Navigate, useNavigate } from "react-router-dom";
-// import { useSelector } from "react-redux";
-
 export { PrivateRoute };
 
 function PrivateRoute({ children }) {
-  //   const { user: authUser } = useSelector((x) => x.auth);
-  const authUser = true;
+  const token = localStorage.getItem("token");
   const history = useNavigate();
 
-  if (!authUser) {
+  axios.defaults.headers.common["Authorization"] = token;
+
+  if (!token) {
     // not logged in so redirect to login page with the return url
     return <Navigate to='/login' />;
   }

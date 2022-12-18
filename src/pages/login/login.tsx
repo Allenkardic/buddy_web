@@ -1,5 +1,6 @@
 import React from "react";
 import * as yup from "yup";
+import { useNavigate } from "react-router-dom";
 import { AiOutlineCopyright } from "react-icons/ai";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import {
@@ -18,7 +19,11 @@ import { Button, Input, TextWithIcon } from "../../components";
 import { colors, images } from "../../utils";
 import { H2, H5, H6 } from "../../styles";
 
+import loginRequest from "../../api/login";
+
 function Login() {
+  const navigate = useNavigate();
+
   const schema = yup.object().shape({
     email: yup.string().email().required("Email is required"),
     password: yup.string().required("Paasword is required"),
@@ -38,12 +43,15 @@ function Login() {
     <Formik
       initialValues={{ email: "", password: "" }}
       validationSchema={schema}
-      onSubmit={(values, { setSubmitting }) => {
-        console.log(values, "hhhh");
-        // setTimeout(() => {
-        //   alert(JSON.stringify(values, null, 2));
-        //   setSubmitting(false);
-        // }, 400);
+      onSubmit={async (values, { setSubmitting }) => {
+        const result = await loginRequest(values);
+        console.log(result, "ddd");
+        if (result.hasOwnProperty("token")) {
+          navigate("dashboard");
+        }
+        setTimeout(() => {
+          setSubmitting(false);
+        }, 400);
       }}
     >
       {(formikProps) => {
