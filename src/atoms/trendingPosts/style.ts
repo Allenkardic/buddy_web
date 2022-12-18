@@ -6,7 +6,6 @@ export const Container = styled.div`
   flex-direction: column;
   background-color: ${colors.white};
   border-radius: ${borderRadius.medium};
-  width: 95%;
   padding: ${spacing.small} ${spacing.small} ${spacing.small} ${spacing.small};
   margin: ${spacing.small} 0px;
 `;
