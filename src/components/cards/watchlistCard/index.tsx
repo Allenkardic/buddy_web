@@ -27,13 +27,12 @@ function WatchlistCard({ product, amount, trend, perecentGrowth }: IProps) {
           <H3 left bold>
             {product}
           </H3>
-          {/* <TrendContainer> */}
+
           {trend === "up" ? (
             <AiOutlineArrowUp size={"15px"} color={colors.green} />
           ) : (
             <AiOutlineArrowDown size={"15px"} color={colors.red} />
           )}
-          {/* </TrendContainer> */}
         </ContentType>
         <HelperText>
           <H4 left color={colors.grey}>

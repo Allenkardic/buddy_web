@@ -9,6 +9,8 @@ export default {
   greyVariantOne: "#84919A",
   greyVariantTwo: "#5B6871",
   greyVariantThree: "#F6F6F6",
+  greyVariantFour: "#F1F1F2",
+  greyVariantFive: "#E6E6E7",
   yellow: "#fbad39",
   green: "#00A441",
   greenVariantOne: "#E0FAF5",

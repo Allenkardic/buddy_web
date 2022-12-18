@@ -12,6 +12,7 @@ import {
   Revenue,
   TrendingNews,
   Watchlist,
+  Overview,
 } from "../../atoms";
 import { colors } from "../../utils";
 
@@ -136,6 +137,7 @@ function Dashboard() {
       <DashboardContainer>
         <ContentOne>
           <Summary data={summary} />
+          <Overview />
           <TrendingPosts data={trendingPosts} />
           <PotentialMembers data={potentialMembers} />
         </ContentOne>
