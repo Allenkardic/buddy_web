@@ -116,6 +116,25 @@ function Dashboard() {
     },
   ]);
 
+  const [overview, setOverview] = useState([
+    {
+      text: "Robbin Hood",
+      isSelected: true,
+    },
+    {
+      text: "Amereitrade",
+      isSelected: false,
+    },
+    {
+      text: "Fidelity",
+      isSelected: false,
+    },
+    {
+      text: "Charles",
+      isSelected: false,
+    },
+  ]);
+
   return (
     <Container>
       {/* <H1>H1</H1>
@@ -137,7 +156,7 @@ function Dashboard() {
       <DashboardContainer>
         <ContentOne>
           <Summary data={summary} />
-          <Overview />
+          <Overview data={overview} />
           <TrendingPosts data={trendingPosts} />
           <PotentialMembers data={potentialMembers} />
         </ContentOne>

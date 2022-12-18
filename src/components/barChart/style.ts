@@ -1,9 +1,4 @@
 import styled from "styled-components";
-import { colors, spacing, borderRadius } from "../../utils";
-
-interface StyleProps {
-  error?: string;
-}
 
 export const Container = styled.div`
   height: 300px;
