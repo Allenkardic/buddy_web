@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { GiSpring } from "react-icons/gi";
 import { AiOutlineUser } from "react-icons/ai";
-import { FiTrendingUp } from "react-icons/fi";
-import { Input, TextWithIcon, TopBar } from "../../components";
-import { H1, H2, H3, H4, H5, H6, Container } from "../../styles";
+import { TopBar } from "../../components";
+import { Container } from "../../styles";
 import { ContentOne, ContentTwo, DashboardContainer } from "./style";
 import {
   PotentialMembers,
@@ -27,9 +26,9 @@ function Dashboard() {
 
   const [trendingPosts, setTrendingPosts] = useState([
     {
-      title: "8 Upcoming Influencer Marketing Trends and Benefits",
+      title: "8 Upcoming Influencer Marketing Trends and Benefits and the all",
       helper:
-        "Marketing is evolving. It's changing from a one-way street to a two-way consation and bla bla bla",
+        "Marketing is evolving. It's changing from a one-way street to a two-way consation and bla bla bla nkfdjkjkfdjkfdjk fjkjkdfjk",
       likes: 260,
       replies: 123,
       comments: 234,
@@ -37,7 +36,7 @@ function Dashboard() {
     {
       title: "How Influencer Marketing Affects Consumer Buying Bahavior",
       helper:
-        "As influencer marking continues to grow, consumers have been turing to their bla bla bla",
+        "As influencer marking continues to grow, consumers have been turing to their bla bla bla jlkdfkjdgjkjkdkjdfjk",
       likes: 260,
       replies: 123,
       comments: 234,
@@ -137,22 +136,6 @@ function Dashboard() {
 
   return (
     <Container>
-      {/* <H1>H1</H1>
-      <H2>H2</H2>
-      <H3>H3</H3>
-      <H4>H4</H4>
-      <H5>H5</H5>
-      <H6>H6</H6>
-      <Input
-        label='Fisrts name'
-        type='password'
-        name='name'
-        onChange={() => {}}
-        error={""}
-      />
-      <TextWithIcon text="Tract real-time overview of company's financial performance" />
-      <TextWithIcon text="Tract real-time overview of company's financial performance" />
-      <TextWithIcon text="Tract real-time overview of company's financial performance" /> */}
       <TopBar />
       <DashboardContainer>
         <ContentOne>

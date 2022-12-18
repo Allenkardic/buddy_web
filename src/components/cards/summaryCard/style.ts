@@ -16,10 +16,8 @@ export const Container = styled.div`
   width: 100%;
   border: 1px solid ${colors.smokeWhite};
   border-radius: ${borderRadius.medium};
-  padding-top: ${(p: StyleProps) =>
-    p.amount ? spacing.xsmall : spacing.small};
-  padding-bottom: ${(p: StyleProps) =>
-    p.amount ? spacing.xsmall : spacing.small};
+  padding-top: ${(p: StyleProps) => (p.amount ? spacing.xsmall : "16px")};
+  padding-bottom: ${(p: StyleProps) => (p.amount ? spacing.xsmall : "16px")};
   padding-left: ${(p: StyleProps) =>
     p.amount ? spacing.xsmall : spacing.xsmall};
   padding-right: ${(p: StyleProps) =>

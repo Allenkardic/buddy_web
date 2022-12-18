@@ -1,6 +1,4 @@
-import React from "react";
 import { H2 } from "../../styles";
-import { IProps } from "../../components/cards/potentialMembersCard";
 import { Container, Content, Title } from "./style";
 import { PotentialMembersCard } from "../../components";
 
@@ -13,7 +11,7 @@ function PotentialMembers({ data }: any) {
         </H2>
       </Title>
       <Content>
-        {data.map((item: any, index: string) => (
+        {data.map((item: any, index: number) => (
           <PotentialMembersCard
             key={index}
             title={item.title}

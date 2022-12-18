@@ -1,13 +1,12 @@
 import styled from "styled-components";
-import { colors, boxShadow, spacing, borderRadius } from "../../utils";
+import { colors, spacing, borderRadius } from "../../utils";
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   background-color: ${colors.white};
   border-radius: ${borderRadius.medium};
-  width: 95%;
-  padding: ${spacing.small} ${spacing.small} ${spacing.xxsmall} ${spacing.small};
+  padding: ${spacing.small};
 `;
 
 export const Content = styled.div`

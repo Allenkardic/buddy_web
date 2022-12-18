@@ -1,11 +1,9 @@
-import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Dashboard } from "../pages/dashboard";
 import { Login } from "../pages/login";
 import NotFound from "../pages/notFound";
 import { PrivateRoute } from "./privateRoute";
 import { SideBar } from "../components";
-import { useEffect } from "react";
 
 function AppRoute() {
   return (

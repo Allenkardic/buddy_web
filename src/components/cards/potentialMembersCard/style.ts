@@ -1,9 +1,5 @@
 import styled from "styled-components";
-import { colors, spacing, borderRadius, boxShadow } from "../../../utils";
-
-interface StyleProps {
-  error?: string;
-}
+import { colors, spacing, borderRadius } from "../../../utils";
 
 export const Container = styled.div`
   display: flex;
@@ -12,7 +8,7 @@ export const Container = styled.div`
   width: 100%;
   border: 1px solid ${colors.smokeWhite};
   border-radius: ${borderRadius.medium};
-  padding: ${spacing.xsmall} 0px ${spacing.small} 0px;
+  padding: ${spacing.xsmall} 0px ${spacing.xsmall} 0px;
 `;
 
 export const Image = styled.img`
@@ -23,8 +19,8 @@ export const Image = styled.img`
 `;
 
 export const HelperText = styled.div`
-  padding-top: ${spacing.xsmall};
-  padding-bottom: ${spacing.small};
+  padding-top: ${spacing.xxsmall};
+  padding-bottom: ${spacing.xsmall};
 `;
 
 export const PercentageContent = styled.div`

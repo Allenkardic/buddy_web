@@ -67,7 +67,7 @@ function BarChart() {
 
   return (
     <Container>
-      <Bar options={options} data={data} height={300} width={950} />
+      <Bar options={options} data={data} height={225} width={950} />
     </Container>
   );
 }

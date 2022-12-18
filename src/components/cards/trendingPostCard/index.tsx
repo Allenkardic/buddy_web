@@ -1,4 +1,3 @@
-import React from "react";
 import { H3, H5 } from "../../../styles";
 import {
   Container,
@@ -9,8 +8,7 @@ import {
 } from "./style";
 import { FaHeart, FaCommentAlt } from "react-icons/fa";
 import { RiShareForwardFill } from "react-icons/ri";
-import { FcSms } from "react-icons/fc";
-import { colors } from "../../../utils";
+import { colors, ellipsis } from "../../../utils";
 interface IProps {
   title: string;
   helperText: string;
@@ -29,11 +27,11 @@ function TrendingPostCard({
   return (
     <Container>
       <H3 left semiBold>
-        {title}
+        {ellipsis(title, 200)}
       </H3>
       <HelperText>
         <H5 color={colors.grey} left>
-          {helperText}
+          {ellipsis(helperText, 100)}
         </H5>
       </HelperText>
       <InteractionContainer>

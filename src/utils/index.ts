@@ -6,3 +6,4 @@ export { default as borderRadius } from "./borderRadius";
 export { default as boxShadow } from "./boxShadow";
 export { default as fontWeight } from "./fontWeight";
 export { default as images } from "./images";
+export { default as ellipsis } from "./ellipsis";

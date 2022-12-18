@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors, boxShadow, spacing, borderRadius } from "../../utils";
+import { colors, spacing, borderRadius } from "../../utils";
 
 export const Container = styled.div`
   display: flex;
@@ -7,7 +7,7 @@ export const Container = styled.div`
   background-color: ${colors.white};
   border-radius: ${borderRadius.medium};
   width: 95%;
-  padding: ${spacing.small} ${spacing.small} ${spacing.xxsmall} ${spacing.small};
+  padding: ${spacing.small} ${spacing.small} ${spacing.small} ${spacing.small};
   margin: ${spacing.small} 0px;
 `;
 
