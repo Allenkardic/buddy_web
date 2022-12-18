@@ -12,12 +12,33 @@ export const Container = styled.div`
   align-items: center;
   padding-left: ${spacing.xsmall};
   padding-right: ${spacing.xxsmall};
-  width: 100%;
-  border: 1px solid
-    ${(p: StyleProps) => (p.error ? colors.red : colors.primary)};
-  border-radius: ${borderRadius.small};
-  &:focus-within {
-    outline: none;
-    box-shadow: 0 0 0 1px ${colors.primary};
-  }
+  margin: ${spacing.small} 0px;
+`;
+
+export const ContentOne = styled.div`
+  flex-grow: 1;
+`;
+
+export const ContentTwo = styled.div`
+  flex-grow: 3;
+
+  display: flex;
+  justify-content: flex-end;
+`;
+
+export const SearchContainer = styled.div`
+  width: 60%;
+`;
+
+export const NavIconContainer = styled.div`
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: ${colors.white};
+  margin-left: ${spacing.xsmall};
 `;

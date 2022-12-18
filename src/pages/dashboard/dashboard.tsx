@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { GiSpring } from "react-icons/gi";
 import { AiOutlineUser } from "react-icons/ai";
 import { FiTrendingUp } from "react-icons/fi";
-import { Input, TextWithIcon } from "../../components";
+import { Input, TextWithIcon, TopBar } from "../../components";
 import { H1, H2, H3, H4, H5, H6, Container } from "../../styles";
 import { ContentOne, ContentTwo, DashboardContainer } from "./style";
 import {
@@ -153,6 +153,7 @@ function Dashboard() {
       <TextWithIcon text="Tract real-time overview of company's financial performance" />
       <TextWithIcon text="Tract real-time overview of company's financial performance" />
       <TextWithIcon text="Tract real-time overview of company's financial performance" /> */}
+      <TopBar />
       <DashboardContainer>
         <ContentOne>
           <Summary data={summary} />

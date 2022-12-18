@@ -3,6 +3,7 @@ import { colors, spacing, borderRadius } from "../../utils";
 
 interface StyleProps {
   error?: string;
+  backgroundColor?: string;
 }
 
 export const InputContainer = styled.div`
@@ -13,7 +14,15 @@ export const InputContainer = styled.div`
   padding-left: ${spacing.xsmall};
   padding-right: ${spacing.xxsmall};
   border: 1px solid
-    ${(p: StyleProps) => (p.error ? colors.red : colors.primary)};
+    ${(p: StyleProps) =>
+      p.error
+        ? colors.red
+        : p.backgroundColor
+        ? p.backgroundColor
+        : colors.primary};
+  border-radius: ${borderRadius.small};
+  background-color: ${(p: StyleProps) =>
+    p.backgroundColor ? p.backgroundColor : "transparent"};
   border-radius: ${borderRadius.small};
   &:focus-within {
     outline: none;

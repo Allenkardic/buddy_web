@@ -49,7 +49,6 @@ function Overview({ data }: any) {
         <H2 left bold>
           Overview
         </H2>
-
         <ItemCardCover>
           {dataList.map((item: any, index: string) => (
             <ItemCard

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { MdEmail, MdOutlineCheck } from "react-icons/md";
-import { FiEyeOff, FiEye } from "react-icons/fi";
+import { FiEyeOff, FiEye, FiSearch } from "react-icons/fi";
 import { AiFillUnlock } from "react-icons/ai";
 
 import { Container, H6, H5 } from "../../styles";
@@ -18,9 +18,19 @@ interface IProps {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   error?: string;
   label?: string;
+  placeholder?: string;
+  backgroundColor?: string;
 }
 
-function Input({ name, type, onChange, error, label }: IProps) {
+function Input({
+  name,
+  type,
+  onChange,
+  error,
+  label,
+  placeholder,
+  backgroundColor,
+}: IProps) {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
   if (type === "email") {
     return (
@@ -81,12 +91,19 @@ function Input({ name, type, onChange, error, label }: IProps) {
   }
   return (
     <div>
-      <H6 left color={colors.grey}>
-        {label}
-      </H6>
-      <InputContainer error={error}>
-        <MdEmail color={colors.greyVariantOne} size={"25px"} />
-        <InputContent name={name} type={type} onChange={onChange} />
+      {label && (
+        <H6 left color={colors.grey}>
+          {label}
+        </H6>
+      )}
+      <InputContainer error={error} backgroundColor={backgroundColor}>
+        <FiSearch color={colors.greyVariantOne} size={"25px"} />
+        <InputContent
+          placeholder={placeholder}
+          name={name}
+          type={type}
+          onChange={onChange}
+        />
       </InputContainer>
       <H6 left color={colors.red}>
         {error}

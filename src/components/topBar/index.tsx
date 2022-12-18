@@ -1,11 +1,44 @@
 import React from "react";
-import { Container } from "./style";
+import { BsBell } from "react-icons/bs";
+import { AiOutlinePlus } from "react-icons/ai";
+import { Input } from "../";
+import { H1 } from "../../styles";
+import { colors } from "../../utils";
+import {
+  Container,
+  ContentOne,
+  ContentTwo,
+  NavIconContainer,
+  SearchContainer,
+} from "./style";
 
 function SideBar() {
   return (
-    <div>
-      <div>Top</div>
-    </div>
+    <Container>
+      <ContentOne>
+        <H1 left bold>
+          My Portfolio
+        </H1>
+      </ContentOne>
+      <ContentTwo>
+        <SearchContainer>
+          <Input
+            type='text'
+            name='name'
+            onChange={() => {}}
+            error={""}
+            placeholder='Search'
+            backgroundColor={colors.white}
+          />
+        </SearchContainer>
+        <NavIconContainer>
+          <BsBell size={"20px"} color={colors.black} />
+        </NavIconContainer>
+        <NavIconContainer>
+          <AiOutlinePlus size={"20px"} color={colors.black} />
+        </NavIconContainer>
+      </ContentTwo>
+    </Container>
   );
 }
 
