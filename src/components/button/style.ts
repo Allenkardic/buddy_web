@@ -20,6 +20,7 @@ export const Container = styled.button`
   width: 100%;
   border: none;
   border-radius: ${borderRadius.medium};
+  cursor: pointer;
 `;
 
 export const ButtonIcon = styled.div`

@@ -38,6 +38,7 @@ export const ChatBoxContainer = styled.div`
   border-radius: 60.7143px;
   margin-bottom: ${spacing.medium};
   box-shadow: ${boxShadow.heavy};
+  cursor: pointer;
 `;
 
 export const ChatBoxContent = styled.div`

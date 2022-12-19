@@ -35,9 +35,9 @@ export const ItemCardContainer = styled.div`
   background-color: ${(p: StyleProps) =>
     p.isSelected ? colors.primary : colors.greyVariantThree};
   border-radius: ${borderRadius.medium};
-
   display: inline-block;
   align-self: flex-start;
+  cursor: pointer;
 `;
 
 export const ItemCardCover = styled.div`
