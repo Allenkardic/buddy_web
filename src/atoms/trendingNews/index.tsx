@@ -12,9 +12,8 @@ function Revenue({ data }: any) {
       </Title>
       <Content>
         {data.map((item: any, index: string) => (
-          <Card>
+          <Card key={index}>
             <TrendingNewsCard
-              key={index}
               mainText={item.mainText}
               helperText={item.mainText}
             />

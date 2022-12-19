@@ -132,8 +132,8 @@ function SideBar() {
         <BottomTabContent>
           {dataBottomTab.map((item, index) => (
             <TabNav
-              onClick={() => handleLogout(item)}
               key={index}
+              onClick={() => handleLogout(item)}
               isSelected={item.isSelected}
               text={item.text}
               icon={item.icon}

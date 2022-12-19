@@ -12,9 +12,8 @@ function Watchlist({ data }: any) {
       </Title>
       <Content>
         {data.map((item: any, index: string) => (
-          <Card>
+          <Card key={index}>
             <WatchlistCard
-              key={index}
               product={item.product}
               amount={item.amount}
               trend={item.trend}
