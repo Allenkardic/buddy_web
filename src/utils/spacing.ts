@@ -1,4 +1,4 @@
-export default {
+const spacing = {
   xxsmall: "4px",
   xsmall: "8px",
   small: "24px",
@@ -6,3 +6,5 @@ export default {
   large: "64px",
   xlarge: "96px",
 };
+
+export default spacing;

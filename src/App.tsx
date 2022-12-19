@@ -8,7 +8,7 @@ function App() {
     <>
       <BrowserRouter>
         <AppRoute />
-        {/* <Global /> */}
+        <Global />
       </BrowserRouter>
     </>
   );

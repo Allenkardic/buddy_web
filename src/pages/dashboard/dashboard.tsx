@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { GiSpring } from "react-icons/gi";
 import { AiOutlineUser } from "react-icons/ai";
 import { TopBar } from "../../components";
@@ -16,15 +15,15 @@ import {
 import { colors } from "../../utils";
 
 function Dashboard() {
-  const [potentialMembers, setPotentialMembers] = useState([
+  const potentialMembers = [
     { title: "Wanda Parker", helper: "@ashking1234", growthPercent: 10.3 },
     { title: "Terry Brown", helper: "@ashking1234", growthPercent: 9.8 },
     { title: "Lucas Holmes", helper: "@ashking1234", growthPercent: 6.5 },
     { title: "Janice Miller", helper: "@ashking1234", growthPercent: 8.6 },
     { title: "Wanda Parker", helper: "@ashking1234", growthPercent: 9.8 },
-  ]);
+  ];
 
-  const [trendingPosts, setTrendingPosts] = useState([
+  const trendingPosts = [
     {
       title: "8 Upcoming Influencer Marketing Trends and Benefits and the all",
       helper:
@@ -41,9 +40,9 @@ function Dashboard() {
       replies: 123,
       comments: 234,
     },
-  ]);
+  ];
 
-  const [summary, setSummary] = useState([
+  const summary = [
     {
       count: 51,
       helper: "Total Channels",
@@ -62,9 +61,9 @@ function Dashboard() {
       icon: <AiOutlineUser color={colors.primary} size={"25px"} />,
       iconBackgroundColor: colors.orangeVariantOne,
     },
-  ]);
+  ];
 
-  const [revenue, setRevenue] = useState([
+  const revenue = [
     {
       amount: 4000,
       helper: "Total Channels",
@@ -83,9 +82,9 @@ function Dashboard() {
       icon: <AiOutlineUser color={colors.primary} size={"25px"} />,
       iconBackgroundColor: colors.orangeVariantOne,
     },
-  ]);
+  ];
 
-  const [trendingNews, setTrendingNews] = useState([
+  const trendingNews = [
     {
       mainText: "Russsia & Ukraine war",
       helperText: "Marketing is evolving . It's changing",
@@ -98,9 +97,9 @@ function Dashboard() {
       mainText: "Fuel Crisi Everywhere",
       helperText: "Marketing is evolving . It's changing",
     },
-  ]);
+  ];
 
-  const [watchlist, setWatchlist] = useState([
+  const watchlist = [
     {
       product: "AAPL",
       amount: 142.9,
@@ -113,9 +112,9 @@ function Dashboard() {
       trend: "down",
       perecentGrowth: 0.78,
     },
-  ]);
+  ];
 
-  const [overview, setOverview] = useState([
+  const overview = [
     {
       text: "Robbin Hood",
       isSelected: true,
@@ -132,7 +131,7 @@ function Dashboard() {
       text: "Charles",
       isSelected: false,
     },
-  ]);
+  ];
 
   return (
     <Container>

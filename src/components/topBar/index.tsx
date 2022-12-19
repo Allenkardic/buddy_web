@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { BsBell } from "react-icons/bs";
 import { AiOutlinePlus } from "react-icons/ai";
 import { Input } from "../";
@@ -13,7 +12,7 @@ import {
 } from "./style";
 
 function SideBar() {
-  const [searchValue, setSarchValue] = useState("");
+  const searchValue = "";
   return (
     <Container>
       <ContentOne>

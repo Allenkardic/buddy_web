@@ -1,4 +1,4 @@
-import { useState, ReactElement } from "react";
+import { ReactElement } from "react";
 import { useNavigate } from "react-router-dom";
 import { AiOutlineUser, AiOutlineDollarCircle } from "react-icons/ai";
 import { FiUsers, FiMail, FiTrendingUp, FiSettings } from "react-icons/fi";
@@ -36,7 +36,7 @@ function TabNav({ text, icon, isSelected, onClick }: IProps) {
 
 function SideBar() {
   const navigate = useNavigate();
-  const [data, setData] = useState([
+  const data = [
     {
       isSelected: true,
       text: "My Portfolio",
@@ -67,9 +67,9 @@ function SideBar() {
       text: "Settings",
       icon: <FiSettings />,
     },
-  ]);
+  ];
 
-  const [dataBottomTab, setDataBottomTab] = useState([
+  const dataBottomTab = [
     {
       isSelected: true,
       text: "Portfolio",
@@ -91,7 +91,7 @@ function SideBar() {
       text: "Settings",
       icon: <FiSettings />,
     },
-  ]);
+  ];
 
   const handleLogout = (item: any) => {
     if (item.text === "Logout") {

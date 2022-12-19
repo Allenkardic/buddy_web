@@ -1,10 +1,6 @@
 import styled from "styled-components";
 import { colors, spacing, borderRadius } from "../../../utils";
 
-interface StyleProps {
-  error?: string;
-}
-
 export const Container = styled.div`
   display: flex;
   flex-direction: column;

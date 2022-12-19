@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors, spacing, borderRadius, boxShadow } from "../../utils";
+import { colors, spacing, boxShadow } from "../../utils";
 
 export const TextWithIconContainer = styled.div`
   display: flex;

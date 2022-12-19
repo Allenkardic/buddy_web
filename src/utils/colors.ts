@@ -1,4 +1,4 @@
-export default {
+const colors = {
   primary: "#FF8600",
   red: "#EB3348",
   redVariantOne: "rgba(235, 51, 72, 0.08)",
@@ -21,3 +21,5 @@ export default {
   smokeWhite: "#f6f6f6",
   gold: "#FFB800",
 };
+
+export default colors;
