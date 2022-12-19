@@ -62,3 +62,18 @@ export const TabNavContainer = styled.div`
 export const TabNavIcon = styled.div`
   color: ${(p: StyleProps) => (p.isSelected ? colors.primary : colors.grey)};
 `;
+
+export const ImgContainer = styled.div`
+  width: 130px;
+  height: 59px;
+  margin-bottom: ${spacing.small};
+  margin-left: auto;
+  margin-right: auto;
+`;
+
+export const Img = styled.img`
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  display: block;
+`;

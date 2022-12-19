@@ -24,7 +24,7 @@ export const Container = styled.div`
     p.amount ? spacing.xsmall : spacing.xsmall};
   background-color: ${colors.white};
   @media (max-width: 768px) {
-    width: 100%;
+    width: 97%;
     margin-bottom: ${spacing.xsmall};
   }
 `;

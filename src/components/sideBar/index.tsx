@@ -1,11 +1,10 @@
 import { useState, ReactElement } from "react";
 import { useNavigate } from "react-router-dom";
-
 import { AiOutlineUser, AiOutlineDollarCircle } from "react-icons/ai";
 import { FiUsers, FiMail, FiTrendingUp, FiSettings } from "react-icons/fi";
 import { SideBarCard, UserActivityCard } from "../index";
 import { H6 } from "../../styles";
-import { colors } from "../../utils";
+import { colors, images } from "../../utils";
 import {
   Container,
   Content,
@@ -13,6 +12,8 @@ import {
   TabNavContainer,
   TabNavIcon,
   BottomTabContent,
+  ImgContainer,
+  Img,
 } from "./style";
 
 interface IProps {
@@ -108,8 +109,12 @@ function SideBar() {
       <Container>
         <Content>
           <div>
+            <ImgContainer>
+              <Img src={images.logo} alt='trending graph' />
+            </ImgContainer>
             {data.map((item, index) => (
               <SideBarCard
+                key={index}
                 isSelected={item.isSelected}
                 text={item.text}
                 icon={item.icon}

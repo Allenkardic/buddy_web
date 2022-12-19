@@ -10,5 +10,6 @@ export const Content = styled.div`
   gap: 2%;
   @media (max-width: 768px) {
     flex-direction: column;
+    gap: 0%;
   }
 `;
