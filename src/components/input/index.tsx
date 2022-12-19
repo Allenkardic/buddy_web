@@ -23,6 +23,7 @@ interface IProps {
   placeholder?: string;
   backgroundColor?: string;
   value: string;
+  borderColor?: string;
 }
 
 function Input({
@@ -34,6 +35,7 @@ function Input({
   placeholder,
   backgroundColor,
   value,
+  borderColor,
 }: IProps) {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
   if (type === "email") {
@@ -119,7 +121,11 @@ function Input({
           {label}
         </H6>
       )}
-      <InputContainer error={error} backgroundColor={backgroundColor}>
+      <InputContainer
+        borderColor={borderColor}
+        error={error}
+        backgroundColor={backgroundColor}
+      >
         <FiSearch color={colors.greyVariantOne} size={"25px"} />
         <InputContent
           placeholder={placeholder}

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors, spacing, borderRadius } from "../../utils";
+import { colors, spacing } from "../../utils";
 
 interface StyleProps {
   isSelected?: boolean;
@@ -17,10 +17,8 @@ export const Container = styled.div`
   padding-top: ${spacing.medium};
   display: flex;
   flex-direction: column;
-  border: 1px solid green;
   @media (max-width: 768px) {
     display: none;
-    // width: 100%;
   }
 `;
 
@@ -50,7 +48,6 @@ export const BottomTabContent = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-
   width: 100%;
 `;
 
@@ -64,7 +61,4 @@ export const TabNavContainer = styled.div`
 
 export const TabNavIcon = styled.div`
   color: ${(p: StyleProps) => (p.isSelected ? colors.primary : colors.grey)};
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
 `;

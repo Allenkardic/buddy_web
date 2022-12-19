@@ -30,6 +30,7 @@ function SideBar() {
             error={""}
             placeholder='Search'
             backgroundColor={colors.white}
+            borderColor={colors.white}
             value={searchValue}
           />
         </SearchContainer>
