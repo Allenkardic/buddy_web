@@ -1,6 +1,6 @@
-import React, { ReactElement } from "react";
+import { ReactElement } from "react";
 import { Container, ContentOne, ContentTwo, HelperText } from "./style";
-import { colors } from "../../../utils";
+import { colors, currencyFormat } from "../../../utils";
 import { H2, H3, H6 } from "../../../styles";
 
 interface IProps {
@@ -23,7 +23,7 @@ function SummaryCard({
       <ContentOne>
         {amount ? (
           <H3 bold left>
-            {amount}
+            {currencyFormat(amount, true)}
           </H3>
         ) : (
           <H2 bold left>

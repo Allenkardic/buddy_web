@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { BsBell } from "react-icons/bs";
 import { AiOutlinePlus } from "react-icons/ai";
 import { Input } from "../";

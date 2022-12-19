@@ -1,4 +1,3 @@
-import React from "react";
 import { AiOutlineArrowUp, AiOutlineArrowDown } from "react-icons/ai";
 import {
   Container,
@@ -7,10 +6,9 @@ import {
   ImgContainer,
   Img,
   HelperText,
-  TrendContainer,
 } from "./style";
-import { colors, images } from "../../../utils";
-import { H3, H4, H5, H6 } from "../../../styles";
+import { colors, images, currencyFormat } from "../../../utils";
+import { H3, H4, H6 } from "../../../styles";
 
 interface IProps {
   product: string;
@@ -27,7 +25,6 @@ function WatchlistCard({ product, amount, trend, perecentGrowth }: IProps) {
           <H3 left bold>
             {product}
           </H3>
-
           {trend === "up" ? (
             <AiOutlineArrowUp size={"15px"} color={colors.green} />
           ) : (
@@ -36,7 +33,7 @@ function WatchlistCard({ product, amount, trend, perecentGrowth }: IProps) {
         </ContentType>
         <HelperText>
           <H4 left color={colors.grey}>
-            {amount}
+            {currencyFormat(amount, true)}
           </H4>
         </HelperText>
         <H6 semiBold left color={trend === "up" ? colors.green : colors.red}>

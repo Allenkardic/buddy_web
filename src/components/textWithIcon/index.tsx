@@ -1,9 +1,5 @@
-import React, { useState } from "react";
-import { MdEmail, MdOutlineCheck } from "react-icons/md";
-import { FiEyeOff, FiEye } from "react-icons/fi";
-import { AiFillUnlock } from "react-icons/ai";
+import { MdOutlineCheck } from "react-icons/md";
 import { BsChat } from "react-icons/bs";
-
 import {
   TextWithIconContainer,
   IconContainer,
@@ -12,7 +8,7 @@ import {
   ChatBoxContent,
 } from "./style";
 import { colors } from "../../utils";
-import { H4, H3, H6, H5 } from "../../styles";
+import { H6, H5 } from "../../styles";
 
 interface IProps {
   text: string;
