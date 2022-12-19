@@ -1,6 +1,4 @@
-import React, { useState } from "react";
 import { H2 } from "../../styles";
-import { IProps } from "../../components/cards/potentialMembersCard";
 import { Container, Content, Title, Card } from "./style";
 import { WatchlistCard } from "../../components";
 

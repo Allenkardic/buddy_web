@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import { ReactElement } from "react";
 import { H5 } from "../../../styles";
 import { colors } from "../../../utils";
 import { Container, Content, Indicator, Icon } from "./style";

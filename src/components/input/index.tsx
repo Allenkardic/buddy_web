@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { MdEmail, MdOutlineCheck } from "react-icons/md";
 import { FiEyeOff, FiEye, FiSearch } from "react-icons/fi";
 import { AiFillUnlock } from "react-icons/ai";
-
-import { Container, H6, H5 } from "../../styles";
+import { H6 } from "../../styles";
 import { colors } from "../../utils";
 import {
   InputContainer,

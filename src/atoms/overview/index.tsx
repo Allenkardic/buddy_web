@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { H2, H6 } from "../../styles";
 
 import {
@@ -8,7 +8,7 @@ import {
   ItemCardContainer,
   ItemCardCover,
 } from "./style";
-import { PotentialMembersCard, BarChart } from "../../components";
+import { BarChart } from "../../components";
 import { colors } from "../../utils";
 
 interface IProps {

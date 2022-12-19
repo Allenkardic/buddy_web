@@ -1,7 +1,6 @@
-import React, { ReactElement } from "react";
 import { Container, Img, ContentTwo, HelperText } from "./style";
 import { colors, images } from "../../../utils";
-import { H2, H3, H5, H6 } from "../../../styles";
+import { H5, H6 } from "../../../styles";
 
 interface IProps {
   mainText?: string;
