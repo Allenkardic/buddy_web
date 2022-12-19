@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import { ReactElement } from "react";
 import { Container, ButtonIcon } from "./style";
 import { H4 } from "../../styles";
 import { colors } from "../../utils";
@@ -8,6 +8,7 @@ interface IProps {
   onClick?: () => void;
   disable?: boolean;
   type?: "button" | "submit";
+  secondary?: boolean;
 }
 
 function Button({
@@ -15,10 +16,11 @@ function Button({
   icon,
   onClick,
   type = "button",
+  secondary = false,
   disable = false,
 }: IProps) {
   return (
-    <Container type={type} onClick={onClick}>
+    <Container secondary={secondary} type={type} onClick={onClick}>
       {icon && <ButtonIcon icon={icon}>{icon}</ButtonIcon>}
       <H4 color={icon ? colors.primary : colors.white} semiBold>
         {text}

@@ -18,7 +18,6 @@ export const H1 = styled.div`
       ? fontWeight.semiBold
       : fontWeight.light};
   color: ${({ color }: any) => (color ? color : colors.black)};
-  // font-size: 4.5em;
   font-size: 1.5em;
   text-align: ${(p: StyleProps) =>
     p.right ? "right" : p.left ? "left" : "center"};
@@ -35,7 +34,6 @@ export const H2 = styled.div`
       ? fontWeight.semiBold
       : fontWeight.light};
   color: ${({ color }: any) => (color ? color : colors.black)};
-  // font-size: 4em;
   font-size: 1.4em;
   text-align: ${(p: StyleProps) =>
     p.right ? "right" : p.left ? "left" : "center"};
@@ -53,7 +51,6 @@ export const H3 = styled.div`
       ? fontWeight.semiBold
       : fontWeight.light};
   color: ${({ color }: any) => (color ? color : colors.black)};
-  // font-size: 3.5em;
   font-size: 1.3em;
   text-align: ${(p: StyleProps) =>
     p.right ? "right" : p.left ? "left" : "center"};
@@ -70,7 +67,6 @@ export const H4 = styled.div`
       ? fontWeight.semiBold
       : fontWeight.light};
   color: ${({ color }: any) => (color ? color : colors.black)};
-  // font-size: 3em;
   font-size: 1.2em;
   text-align: ${(p: StyleProps) =>
     p.right ? "right" : p.left ? "left" : "center"};
@@ -87,7 +83,6 @@ export const H5 = styled.div`
       ? fontWeight.semiBold
       : fontWeight.light};
   color: ${({ color }: any) => (color ? color : colors.black)};
-  // font-size: 2.5em;
   font-size: 1.1em;
   text-align: ${(p: StyleProps) =>
     p.right ? "right" : p.left ? "left" : "center"};
@@ -104,7 +99,6 @@ export const H6 = styled.div`
       ? fontWeight.semiBold
       : fontWeight.light};
   color: ${({ color }: any) => (color ? color : colors.black)};
-  // font-size: 2em;
   font-size: 1em;
   text-align: ${(p: StyleProps) =>
     p.right ? "right" : p.left ? "left" : "center"};

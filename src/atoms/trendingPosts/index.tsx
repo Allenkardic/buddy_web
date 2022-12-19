@@ -1,6 +1,4 @@
-import React from "react";
 import { H2 } from "../../styles";
-import { IProps } from "../../components/cards/potentialMembersCard";
 import { Container, Content, Title } from "./style";
 import { TrendingPostCard } from "../../components";
 

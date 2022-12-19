@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { colors, spacing, borderRadius } from "../../utils";
 
 interface StyleProps {
-  error?: string;
+  isSelected?: boolean;
 }
 
 export const Container = styled.div`
@@ -18,6 +18,10 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   border: 1px solid green;
+  @media (max-width: 768px) {
+    display: none;
+    // width: 100%;
+  }
 `;
 
 export const Content = styled.div`
@@ -27,4 +31,40 @@ export const Content = styled.div`
   justify-content: space-between;
   height: 100%;
   padding-bottom: ${spacing.small};
+`;
+
+export const BottomTabContainer = styled.div`
+  display: none;
+  @media (max-width: 768px) {
+    bottom: 0;
+    position: fixed;
+    display: block;
+    z-index: 2;
+    background-color: ${colors.smokeWhite};
+    width: 100%;
+  }
+`;
+
+export const BottomTabContent = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+`;
+
+export const TabNavContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // justify-content: space-between;
+`;
+
+export const TabNavIcon = styled.div`
+  color: ${(p: StyleProps) => (p.isSelected ? colors.primary : colors.grey)};
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
 `;

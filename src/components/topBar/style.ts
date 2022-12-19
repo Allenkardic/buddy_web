@@ -1,9 +1,5 @@
 import styled from "styled-components";
-import { colors, spacing, borderRadius } from "../../utils";
-
-interface StyleProps {
-  error?: string;
-}
+import { colors, spacing } from "../../utils";
 
 export const Container = styled.div`
   display: flex;

@@ -1,4 +1,3 @@
-import React from "react";
 import { RiLogoutBoxRLine } from "react-icons/ri";
 import { Container, InfluncerText, Image } from "./style";
 import { H2, H6 } from "../../../styles";
@@ -11,7 +10,7 @@ interface IProps {
   onClick?: () => void;
 }
 
-function UserActivityCard({ title, helper }: IProps) {
+function UserActivityCard({ title, helper, onClick }: IProps) {
   return (
     <Container>
       <Image src={images.user} alt='user acount' />
@@ -21,7 +20,12 @@ function UserActivityCard({ title, helper }: IProps) {
       <InfluncerText>
         <H6>{helper}</H6>
       </InfluncerText>
-      <Button text='Logout' icon={<RiLogoutBoxRLine size={"15px"} />} />
+      <Button
+        onClick={onClick}
+        secondary={true}
+        text='Logout'
+        icon={<RiLogoutBoxRLine size={"15px"} />}
+      />
     </Container>
   );
 }
