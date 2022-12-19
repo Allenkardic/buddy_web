@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { colors, boxShadow, spacing, borderRadius } from "../../utils";
 
 export const DashboardContainer = styled.div`
   display: grid;

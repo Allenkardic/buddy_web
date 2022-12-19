@@ -54,8 +54,7 @@ function Login() {
       }}
     >
       {(formikProps) => {
-        const { handleChange, values, handleSubmit, errors, touched } =
-          formikProps;
+        const { handleChange, values, handleSubmit, errors } = formikProps;
 
         return (
           <Container>

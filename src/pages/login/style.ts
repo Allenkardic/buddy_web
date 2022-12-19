@@ -1,10 +1,6 @@
 import styled from "styled-components";
 import { colors, spacing, borderRadius, boxShadow } from "../../utils";
 
-interface StyleProps {
-  error?: string;
-}
-
 export const Container = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
