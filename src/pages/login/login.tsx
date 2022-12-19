@@ -1,8 +1,7 @@
-import React from "react";
 import * as yup from "yup";
 import { useNavigate } from "react-router-dom";
 import { AiOutlineCopyright } from "react-icons/ai";
-import { Formik, Field, Form, ErrorMessage } from "formik";
+import { Formik } from "formik";
 import {
   Container,
   ContentOne,
@@ -45,7 +44,7 @@ function Login() {
       validationSchema={schema}
       onSubmit={async (values, { setSubmitting }) => {
         const result = await loginRequest(values);
-        console.log(result, "ddd");
+
         if (result.hasOwnProperty("token")) {
           navigate("dashboard");
         }
