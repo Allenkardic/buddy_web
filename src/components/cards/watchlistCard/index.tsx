@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { AiOutlineArrowUp, AiOutlineArrowDown } from "react-icons/ai";
 import {
   Container,
@@ -47,4 +48,4 @@ function WatchlistCard({ product, amount, trend, perecentGrowth }: IProps) {
   );
 }
 
-export default WatchlistCard;
+export default memo(WatchlistCard);

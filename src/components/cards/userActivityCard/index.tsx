@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { RiLogoutBoxRLine } from "react-icons/ri";
 import { Container, InfluncerText, Image } from "./style";
 import { H2, H6 } from "../../../styles";
@@ -30,4 +31,4 @@ function UserActivityCard({ title, helper, onClick }: IProps) {
   );
 }
 
-export default UserActivityCard;
+export default memo(UserActivityCard);

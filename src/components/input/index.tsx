@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, memo } from "react";
 import { MdEmail, MdOutlineCheck } from "react-icons/md";
 import { FiEyeOff, FiEye, FiSearch } from "react-icons/fi";
 import { AiFillUnlock } from "react-icons/ai";
@@ -141,4 +141,4 @@ function Input({
   );
 }
 
-export default Input;
+export default memo(Input);

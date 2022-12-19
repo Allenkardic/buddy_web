@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { BsBell } from "react-icons/bs";
 import { AiOutlinePlus } from "react-icons/ai";
 import { Input } from "../";
@@ -44,4 +45,4 @@ function SideBar() {
   );
 }
 
-export default SideBar;
+export default memo(SideBar);

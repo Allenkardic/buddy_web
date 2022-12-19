@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { Container, Img, ContentTwo, HelperText } from "./style";
 import { colors, images } from "../../../utils";
 import { H5, H6 } from "../../../styles";
@@ -25,4 +26,4 @@ function TrendingNewsCard({ mainText, helperText }: IProps) {
   );
 }
 
-export default TrendingNewsCard;
+export default memo(TrendingNewsCard);

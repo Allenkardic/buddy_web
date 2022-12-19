@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { H3, H5 } from "../../../styles";
 import {
   Container,
@@ -60,4 +61,4 @@ function TrendingPostCard({
   );
 }
 
-export default TrendingPostCard;
+export default memo(TrendingPostCard);

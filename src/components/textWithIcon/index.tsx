@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { MdOutlineCheck } from "react-icons/md";
 import { BsChat } from "react-icons/bs";
 import {
@@ -44,4 +45,4 @@ function TextWithIcon({ text, chatBox }: IProps) {
   }
 }
 
-export default TextWithIcon;
+export default memo(TextWithIcon);

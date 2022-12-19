@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { ReactElement } from "react";
 import { Container, ContentOne, ContentTwo, HelperText } from "./style";
 import { colors, currencyFormat } from "../../../utils";
@@ -41,4 +42,4 @@ function SummaryCard({
   );
 }
 
-export default SummaryCard;
+export default memo(SummaryCard);

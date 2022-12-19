@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { ReactElement } from "react";
 import { H5 } from "../../../styles";
 import { colors } from "../../../utils";
@@ -20,4 +21,4 @@ function SideBarCard({ isSelected, text, icon }: IProps) {
   );
 }
 
-export default SideBarCard;
+export default memo(SideBarCard);

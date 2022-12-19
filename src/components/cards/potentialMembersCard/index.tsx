@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { FiTrendingUp } from "react-icons/fi";
 import {
   Container,
@@ -34,4 +35,4 @@ function PotentialMembersCard({ helper, title, growthPercent }: IProps) {
   );
 }
 
-export default PotentialMembersCard;
+export default memo(PotentialMembersCard);

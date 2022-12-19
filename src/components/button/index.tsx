@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { ReactElement } from "react";
 import { Container, ButtonIcon } from "./style";
 import { H4 } from "../../styles";
@@ -29,4 +30,4 @@ function Button({
   );
 }
 
-export default Button;
+export default memo(Button);
