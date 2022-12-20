@@ -34,6 +34,9 @@ export const LoginContainer = styled.div`
   border: 1px solid ${colors.greyVariantFive};
   border-radius: ${borderRadius.small};
   border-shadow: ${boxShadow.light};
+  @media (max-width: 768px) {
+    width: 95%;
+  }
 `;
 
 export const HelperText = styled.div`
